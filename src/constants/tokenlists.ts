@@ -75,5 +75,16 @@ export const TOKEN_LIST_MAP: TokenListMapByNetwork = {
     External: [
       'https://beethoven-assets.s3.eu-central-1.amazonaws.com/beethoven-fantom.tokenlist.json'
     ]
+  },
+  '43113': {
+    Balancer: {
+      Default:
+        'https://raw.githubusercontent.com/pangolindex/tokenlists/main/defi.tokenlist.json',
+      Vetted:
+        'https://raw.githubusercontent.com/pangolindex/tokenlists/main/defi.tokenlist.json'
+    },
+    External: [
+      'https://raw.githubusercontent.com/pangolindex/tokenlists/main/defi.tokenlist.json'
+    ]
   }
 };

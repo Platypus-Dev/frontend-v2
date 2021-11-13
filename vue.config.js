@@ -28,11 +28,16 @@ module.exports = {
   configureWebpack: {
     plugins,
     devServer: {
+    compress: true,
+    inline: true,
+  disableHostCheck: true,
+    proxy: 'http://official.finance',
+    host: '0.0.0.0',
+    port: '8080',
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET',
-        'Access-Control-Allow-Headers':
-          'X-Requested-With, content-type, Authorization'
+        'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
       }
     }
   },

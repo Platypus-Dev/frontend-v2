@@ -2,7 +2,7 @@
   <AppNavAlert v-if="alert" :alert="alert" />
   <nav id="app-nav" ref="appNav" class="h-20 px-4 lg:px-6 sticky top-0">
     <div class="h-full flex items-center justify-between">
-      <div class="w-2/3 lg:w-1/3 flex items-center">
+      <div class="w-20 lg:w-1/3 flex items-center">
         <router-link
           :to="{ name: 'home' }"
           @click="trackGoal(Goals.ClickNavLogo)"
@@ -63,7 +63,7 @@ export default defineComponent({
 
     // COMPUTED
     const alert = computed(() => store.state.alerts.current);
-    const hideNetworkSelect = computed(() => connector.value?.id === 'gnosis');
+    const hideNetworkSelect = computed(() => connector.value?.id === 'fuji');
 
     // METHODS
     function handleScroll() {

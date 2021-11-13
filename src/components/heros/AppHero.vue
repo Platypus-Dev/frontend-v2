@@ -3,12 +3,14 @@
     <div class="w-full max-w-3xl mx-auto">
       <template v-if="isWalletReady">
         <div class="flex justify-center mt-4">
-          <img
+          <!--<img
             v-if="darkMode"
             src="~@/assets/images/investments-headline.svg"
             width="400"
-          />
+          />-->
         </div>
+        Current OFFICIAL.FINANCE Holdings:
+        <br>
         <BalLoadingBlock
           v-if="isLoadingUserPools || isLoadingDecoratedFarms"
           class="h-10 w-40 mx-auto"

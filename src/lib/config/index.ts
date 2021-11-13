@@ -1,5 +1,7 @@
 import rinkeby from './rinkeby.json';
 import fantom from './fantom.json';
+//import fuji from './fuji.json';
+//import avalanche from './avalance.json';
 
 export interface Config {
   key: string;
@@ -82,7 +84,7 @@ const config: Record<string, Config> = {
   //'1': homestead,
   //'42': kovan,
   '4': rinkeby,
-  '250': fantom
+  '250': fantom,
   //'137': polygon,
   //'12345': test,
   //'43113': fuji,

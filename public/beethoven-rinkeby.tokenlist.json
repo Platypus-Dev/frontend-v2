@@ -143,6 +143,14 @@
       "decimals": 18,
       "chainId": 4,
       "logoURI": "https://beethoven-assets.s3.eu-central-1.amazonaws.com/beets-icon-large.png"
-    }
+    },
+    {
+      "name": "mJENKEM",
+      "address": "0x05b2cc9a2212d3a9afb27e034c6922bcbb8defeb",
+      "symbol": "mJENKEM",
+      "decimals": 18,
+      "chainId": 4,
+      "logoURI": "https://assets.coingecko.com/coins/images/4001/large/Fantom.png"
+    },
   ]
 }

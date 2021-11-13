@@ -1,0 +1,36 @@
+{
+  "name": "Beethoven Rinkeby",
+  "timestamp": "2021-02-27T18:18:18.181Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://storageapi.fleek.co/beethovenxfi-team-bucket/bethovenx-icon.png",
+  "keywords": [
+    "beethoven",
+    "default",
+    "eth",
+    "rinkeby"
+  ],
+  "tokens": [
+
+    {
+      "name": "Fantom",
+      "address": "0x0483863540CB2C1ea77F7827db43ee160a0Ad7AC",
+      "symbol": "FTM",
+      "decimals": 18,
+      "chainId": 4,
+      "logoURI": "https://assets.coingecko.com/coins/images/4001/large/Fantom.png"
+    },
+    {
+      "name": "mJENKEM",
+      "address": "0x05b2cc9a2212d3a9afb27e034c6922bcbb8defeb",
+      "symbol": "mJENKEM",
+      "decimals": 18,
+      "chainId": 4,
+      "logoURI": "https://assets.coingecko.com/coins/images/4001/large/Fantom.png"
+    },
+  ]
+}

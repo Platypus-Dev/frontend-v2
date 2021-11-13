@@ -2,7 +2,7 @@
   <div class="lg:container lg:mx-auto pt-24 md:pt-16">
     <template v-if="isWalletReady && userPools && userPools.length > 0">
       <div class="px-4 lg:px-0">
-        <h3 class="mb-2">My Investments</h3>
+        <h3 class="mb-2">Your Investments</h3>
         <BalAlert
           v-if="hasUnstakedBpt"
           title="You have unstaked BPT in your wallet"
@@ -29,7 +29,7 @@
     </template>
 
     <div class="px-4 lg:px-0">
-      <h3 class="mb-3">Beethoven-X Investment Pools</h3>
+      <h3 class="mb-3">Investment Pools</h3>
       <TokenSearchInput
         v-model="selectedTokens"
         :loading="isLoadingPools"
