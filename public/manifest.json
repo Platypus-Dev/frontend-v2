@@ -1,9 +1,9 @@
 {
-  "short_name": "Beethovenx",
-  "name": "Beethovenx",
-  "description": "Swap tokens and manage your assets on Beethovenx Protocol",
+  "short_name": "Official",
+  "name": "Official",
+  "description": "Swap tokens and manage your assets on Official Protocol",
   "providedBy": {
-    "name": "Beethovenx Labs",
+    "name": "Official Labs",
     "url": "https://beethovenx.io"
   },
   "icons": [

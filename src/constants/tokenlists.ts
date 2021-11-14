@@ -86,5 +86,5 @@ export const TOKEN_LIST_MAP: TokenListMapByNetwork = {
     External: [
       'https://beethoven-assets.s3.eu-central-1.amazonaws.com/beethoven-rinkeby.tokenlist.json'
     ]
-  },
+  }
 };

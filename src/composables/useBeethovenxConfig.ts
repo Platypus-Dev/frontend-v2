@@ -1,9 +1,9 @@
 import { computed } from 'vue';
-import useBeethovenxConfigQuery from '@/composables/queries/useBeethovenxConfigQuery';
-import { BeethovenxConfig } from '@/services/beethovenx/beethovenx.service';
+import useOfficialConfigQuery from '@/composables/queries/useOfficialConfigQuery';
+import { OfficialConfig } from '@/services/beethovenx/beethovenx.service';
 
-export default function useBeethovenxConfig() {
-  const beethovenxConfigQuery = useBeethovenxConfigQuery();
+export default function useOfficialConfig() {
+  const beethovenxConfigQuery = useOfficialConfigQuery();
 
   const beethovenxConfigLoading = computed(
     () =>
@@ -12,7 +12,7 @@ export default function useBeethovenxConfig() {
   );
 
   const beethovenxConfig = computed(
-    (): BeethovenxConfig =>
+    (): OfficialConfig =>
       beethovenxConfigQuery.data.value
         ? beethovenxConfigQuery.data.value
         : { incentivizedPools: [], blacklistedPools: [], pausedPools: [] }

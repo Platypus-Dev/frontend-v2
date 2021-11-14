@@ -16,13 +16,13 @@ export type Price = { [fiat: string]: number };
 export type TokenPrices = { [address: string]: Price };
 export type HistoricalPrices = { [timestamp: string]: number[] };
 
-export interface BeethovenxConfig {
+export interface OfficialConfig {
   incentivizedPools: string[];
   pausedPools: string[];
   blacklistedPools: string[];
 }
 
-export default class BeethovenxService {
+export default class OfficialService {
   private readonly url: string;
 
   constructor(private readonly configService = _configService) {
@@ -118,8 +118,8 @@ export default class BeethovenxService {
     return result;
   }
 
-  public async getBeethovenxConfig(): Promise<BeethovenxConfig> {
-    const { data } = await axios.get<{ result: BeethovenxConfig }>(
+  public async getOfficialConfig(): Promise<OfficialConfig> {
+    const { data } = await axios.get<{ result: OfficialConfig }>(
       this.configService.network.configSanityUrl
     );
 
@@ -227,4 +227,4 @@ export default class BeethovenxService {
   }
 }
 
-export const beethovenxService = new BeethovenxService();
+export const beethovenxService = new OfficialService();

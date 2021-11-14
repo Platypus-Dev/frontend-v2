@@ -10,7 +10,7 @@ export default class GasPriceService {
     private readonly configService = new ConfigService(),
     private readonly blocknativeProvider = new BlocknativeProvider(),
     private readonly polygonProvider = new PolygonProvider(),
-    private readonly fantomProvider = new FantomProvider()
+    private readonly fantomProvider = new FantomProvider(),
     private readonly fujiProvider = new FujiProvider()
   ) {}
 

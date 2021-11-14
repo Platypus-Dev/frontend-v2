@@ -4,21 +4,21 @@ import { UseQueryOptions } from 'react-query/types';
 import QUERY_KEYS from '@/constants/queryKeys';
 import { FETCH_ONCE_OPTIONS } from '@/constants/vue-query';
 import {
-  BeethovenxConfig,
+  OfficialConfig,
   beethovenxService
 } from '@/services/beethovenx/beethovenx.service';
 
 /**
  * Fetch all token lists, should only happen once.
  */
-export default function useBeethovenxConfigQuery(
-  options: UseQueryOptions<BeethovenxConfig> = {}
+export default function useOfficialConfigQuery(
+  options: UseQueryOptions<OfficialConfig> = {}
 ) {
   const queryKey = reactive(QUERY_KEYS.Config.All);
 
   const queryFn = async () => {
     console.log('Fetching beethovenx config');
-    return beethovenxService.getBeethovenxConfig();
+    return beethovenxService.getOfficialConfig();
   };
 
   const queryOptions = reactive({
@@ -27,5 +27,5 @@ export default function useBeethovenxConfigQuery(
     ...options
   });
 
-  return useQuery<BeethovenxConfig>(queryKey, queryFn, queryOptions);
+  return useQuery<OfficialConfig>(queryKey, queryFn, queryOptions);
 }

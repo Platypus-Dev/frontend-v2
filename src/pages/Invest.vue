@@ -88,7 +88,7 @@ import usePoolFilters from '@/composables/pools/usePoolFilters';
 import { masterChefContractsService } from '@/services/farm/master-chef-contracts.service';
 import BalBtn from '@/components/_global/BalBtn/BalBtn.vue';
 import BalAlert from '@/components/_global/BalAlert/BalAlert.vue';
-import useBeethovenxConfig from '@/composables/useBeethovenxConfig';
+import useOfficialConfig from '@/composables/useOfficialConfig';
 
 export default defineComponent({
   components: {
@@ -102,7 +102,7 @@ export default defineComponent({
     // COMPOSABLES
     const router = useRouter();
     const { isWalletReady, isV1Supported } = useWeb3();
-    const { beethovenxConfig } = useBeethovenxConfig();
+    const { beethovenxConfig } = useOfficialConfig();
     const {
       selectedTokens,
       addSelectedToken,
