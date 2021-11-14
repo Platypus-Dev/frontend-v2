@@ -1,6 +1,6 @@
 import { computed } from 'vue';
-import usePortfolioQuery from '@/composables/offical/usePortfolioQuery';
-import { UserPortfolioData } from '@/services/offical/offical-types';
+import usePortfolioQuery from '@/composables/official/usePortfolioQuery';
+import { UserPortfolioData } from '@/services/official/official-types';
 
 export default function usePortfolio() {
   const portfolioQuery = usePortfolioQuery();

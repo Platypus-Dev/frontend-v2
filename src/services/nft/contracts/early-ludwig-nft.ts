@@ -1,7 +1,7 @@
 import Service from '@/services/balancer/contracts/balancer-contracts.service';
 import ConfigService from '@/services/config/config.service';
 import { Multicaller } from '@/lib/utils/balancer/contract';
-import { default as officalNftAbi } from '@/lib/abi/OfficialNft.json';
+import { default as officialNftAbi } from '@/lib/abi/OfficialNft.json';
 
 export default class EarlyLudwigNft {
   service: Service;
@@ -14,7 +14,7 @@ export default class EarlyLudwigNft {
     const multicaller = new Multicaller(
       this.configService.network.key,
       this.service.provider,
-      officalNftAbi
+      officialNftAbi
     );
 
     const result = await multicaller
@@ -28,7 +28,7 @@ export default class EarlyLudwigNft {
     const multicaller = new Multicaller(
       this.configService.network.key,
       this.service.provider,
-      officalNftAbi
+      officialNftAbi
     );
 
     const result = await multicaller
@@ -45,7 +45,7 @@ export default class EarlyLudwigNft {
     const multicaller = new Multicaller(
       this.configService.network.key,
       this.service.provider,
-      officalNftAbi
+      officialNftAbi
     );
 
     const result = await multicaller

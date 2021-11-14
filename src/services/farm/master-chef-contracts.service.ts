@@ -4,13 +4,13 @@ import { default as MasterChefAbi } from '@/lib/abi/OfficialMasterChef.json';
 import { rpcProviderService as _rpcProviderService } from '@/services/rpc-provider/rpc-provider.service';
 import { configService as _configService } from '@/services/config/config.service';
 import MasterChef from './contracts/master-chef';
-import OfficialToken from '@/services/farm/contracts/offical-token';
+import OfficialToken from '@/services/farm/contracts/official-token';
 import HndRewarder from '@/services/farm/contracts/hnd-rewarder';
 
 export default class MasterChefContractsService {
   masterChef: MasterChef;
   hndRewarder: HndRewarder;
-  officalToken: OfficialToken;
+  officialToken: OfficialToken;
   config: Config;
   provider: JsonRpcProvider;
 
@@ -23,7 +23,7 @@ export default class MasterChefContractsService {
 
     // Init contracts
     this.masterChef = new MasterChef(this);
-    this.officalToken = new OfficialToken(this);
+    this.officialToken = new OfficialToken(this);
     this.hndRewarder = new HndRewarder(this);
   }
 

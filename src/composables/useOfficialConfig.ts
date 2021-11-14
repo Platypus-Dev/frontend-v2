@@ -1,23 +1,23 @@
 import { computed } from 'vue';
 import useOfficialConfigQuery from '@/composables/queries/useOfficialConfigQuery';
-import { OfficialConfig } from '@/services/offical/offical.service';
+import { OfficialConfig } from '@/services/official/official.service';
 
 export default function useOfficialConfig() {
-  const officalConfigQuery = useOfficialConfigQuery();
+  const officialConfigQuery = useOfficialConfigQuery();
 
-  const officalConfigLoading = computed(
-    () => officalConfigQuery.isLoading.value || officalConfigQuery.isIdle.value
+  const officialConfigLoading = computed(
+    () => officialConfigQuery.isLoading.value || officialConfigQuery.isIdle.value
   );
 
-  const officalConfig = computed(
+  const officialConfig = computed(
     (): OfficialConfig =>
-      officalConfigQuery.data.value
-        ? officalConfigQuery.data.value
+      officialConfigQuery.data.value
+        ? officialConfigQuery.data.value
         : { incentivizedPools: [], blacklistedPools: [], pausedPools: [] }
   );
 
   return {
-    officalConfigLoading,
-    officalConfig
+    officialConfigLoading,
+    officialConfig
   };
 }

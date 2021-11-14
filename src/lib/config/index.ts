@@ -34,7 +34,7 @@ export interface Config {
     multicall: string;
     vault: string;
     masterChef: string;
-    officalToken: string;
+    officialToken: string;
     fbeetsVestingToken: string;
     fbeetsToken: string;
     weightedPoolFactory: string;

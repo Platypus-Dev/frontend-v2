@@ -12,7 +12,7 @@ export const defaultOptions: InitializationOptions = {
 };
 
 export default {
-  /*install: app => {
+  install: app => {
     const blocknative = new BlocknativeSdk(defaultOptions);
 
     // filter out pending simulation events
@@ -30,5 +30,5 @@ export default {
 
     // Make plugin available in composition API
     app.provide(bnSdkSymbol, blocknative);
-  }*/
+  }
 };

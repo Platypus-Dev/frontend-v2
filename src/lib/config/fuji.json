@@ -12,8 +12,8 @@
   "publicRpc": "https://api.avax-test.network/ext/bc/C/rpc",
   "explorer": "https://cchain.explorer.avax-test.network",
   "subgraph": "https://thegraph.com/hosted-service/subgraph/l0rdicon/subgraph-fuji-v2",
-  "farmSubgraph": "https://api.studio.thegraph.com/query/7097/masterchefv2/v0.0.10",
-  "blockSubgraph": "https://api.thegraph.com/subgraphs/name/matthewlilley/avalanche-blocks",
+  "farmSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/official-token",
+  "blockSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/avalanche-blocks",
   "poolsUrlV1": "",
   "poolsUrlV2": "",
   "nativeAsset": {
@@ -30,6 +30,7 @@
     "lidoRelayer": "",
     "exchangeProxy": "",
     "merkleRedeem": "",
+    "officialToken": "0xEE67880A6aaBa39c5eAf833B68Ea5fd908dC008D",
     "multicall": "0x53FE8639203D5dfDF735C6f8949BD340Ed6800d5",
     "authorizer": "0xa9aa0081662682501CCE8eA9f5C5a937b61c9234",
     "vault": "0x4cB07C0aD2EF69736032C97911d530a96d7Fc039",

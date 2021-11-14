@@ -6,9 +6,9 @@ import { balancerSubgraphService } from '@/services/balancer/subgraph/balancer-s
 import { PoolSnapshots } from '@/services/balancer/subgraph/types';
 import usePoolQuery from './usePoolQuery';
 import {
-  officalService,
+  officialService,
   HistoricalPrices
-} from '@/services/offical/offical.service';
+} from '@/services/official/official.service';
 
 /**
  * TYPES
@@ -42,7 +42,7 @@ export default function usePoolSnapshotsQuery(
   const queryFn = async () => {
     if (!pool.value) throw new Error('No pool');
 
-    const prices = await officalService.getHistoricalTokenPrices(
+    const prices = await officialService.getHistoricalTokenPrices(
       pool.value.tokensList
     );
     const snapshots = await balancerSubgraphService.poolSnapshots.get(id, days);

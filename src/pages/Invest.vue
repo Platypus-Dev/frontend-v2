@@ -102,7 +102,7 @@ export default defineComponent({
     // COMPOSABLES
     const router = useRouter();
     const { isWalletReady, isV1Supported } = useWeb3();
-    const { officalConfig } = useOfficialConfig();
+    const { officialConfig } = useOfficialConfig();
     const {
       selectedTokens,
       addSelectedToken,
@@ -124,7 +124,7 @@ export default defineComponent({
     //TODO: this will break down once pagination starts happening
     const communityPools = computed(() => {
       return poolsWithFarms.value?.filter(
-        pool => !officalConfig.value.incentivizedPools.includes(pool.id)
+        pool => !officialConfig.value.incentivizedPools.includes(pool.id)
       );
     });
 
@@ -135,11 +135,11 @@ export default defineComponent({
             return (
               selectedTokens.value.every((selectedToken: string) =>
                 pool.tokenAddresses.includes(selectedToken)
-              ) && officalConfig.value.incentivizedPools.includes(pool.id)
+              ) && officialConfig.value.incentivizedPools.includes(pool.id)
             );
           })
         : poolsWithFarms?.value.filter(pool =>
-            officalConfig.value.incentivizedPools.includes(pool.id)
+            officialConfig.value.incentivizedPools.includes(pool.id)
           );
     });
 
@@ -153,7 +153,7 @@ export default defineComponent({
       userPools.value.find(pool => pool.farm && parseFloat(pool.shares) > 0)
     );
 
-    masterChefContractsService.officalToken.getCirculatingSupply();
+    masterChefContractsService.officialToken.getCirculatingSupply();
 
     function goToPoolCreate() {
       router.push({ name: 'pool-create' });

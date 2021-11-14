@@ -30,6 +30,7 @@
     "dsProxyRegistry": "",
     "exchangeProxy": "",
     "merkleRedeem": "",
+    "officialToken": "",
     "multicall": "0x09523Acc78Dd297Ae5Da00DdeBE6f10ebF784565",
     "authorizer": "0x974D3FF709D84Ba44cde3257C0B5B0b14C081Ce9",
     "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",

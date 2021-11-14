@@ -5,8 +5,8 @@ import QUERY_KEYS from '@/constants/queryKeys';
 import { FETCH_ONCE_OPTIONS } from '@/constants/vue-query';
 import {
   OfficialConfig,
-  officalService
-} from '@/services/offical/offical.service';
+  officialService
+} from '@/services/official/official.service';
 
 /**
  * Fetch all token lists, should only happen once.
@@ -17,8 +17,8 @@ export default function useOfficialConfigQuery(
   const queryKey = reactive(QUERY_KEYS.Config.All);
 
   const queryFn = async () => {
-    console.log('Fetching offical config');
-    return officalService.getOfficialConfig();
+    console.log('Fetching official config');
+    return officialService.getOfficialConfig();
   };
 
   const queryOptions = reactive({

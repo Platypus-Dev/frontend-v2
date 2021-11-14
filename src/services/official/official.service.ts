@@ -8,7 +8,7 @@ import {
   UserPortfolio,
   UserPortfolioData,
   UserTokenData
-} from '@/services/offical/offical-types';
+} from '@/services/official/official-types';
 import { getAddress } from '@ethersproject/address';
 import { keyBy } from 'lodash';
 
@@ -227,4 +227,4 @@ export default class OfficialService {
   }
 }
 
-export const officalService = new OfficialService();
+export const officialService = new OfficialService();

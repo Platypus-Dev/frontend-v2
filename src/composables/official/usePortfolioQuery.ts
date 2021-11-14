@@ -3,9 +3,9 @@ import { useQuery } from 'vue-query';
 import { QueryObserverOptions } from 'react-query/core';
 import QUERY_KEYS from '@/constants/queryKeys';
 import useApp from '../useApp';
-import { UserPortfolio } from '@/services/offical/offical-types';
+import { UserPortfolio } from '@/services/official/official-types';
 import useWeb3 from '@/services/web3/useWeb3';
-import { officalService } from '@/services/offical/offical.service';
+import { officialService } from '@/services/official/official.service';
 
 export default function usePortfolioQuery(
   options: QueryObserverOptions<UserPortfolio> = {}
@@ -20,7 +20,7 @@ export default function usePortfolioQuery(
   const queryKey = reactive(QUERY_KEYS.Account.Portfolio(account, chainId));
 
   const queryFn = async () => {
-    const response = await officalService.getUserPortfolio(account.value);
+    const response = await officialService.getUserPortfolio(account.value);
 
     return response;
   };

@@ -3,9 +3,9 @@ import { useQuery } from 'vue-query';
 import { UseQueryOptions } from 'react-query/types';
 import QUERY_KEYS from '@/constants/queryKeys';
 import {
-  officalService,
+  officialService,
   TokenPrices
-} from '@/services/offical/offical.service';
+} from '@/services/official/official.service';
 
 /**
  * Fetches token prices for all provided addresses.
@@ -17,7 +17,7 @@ export default function useTokenPricesQuery(
   const queryKey = reactive(QUERY_KEYS.Tokens.Prices(addresses));
 
   const queryFn = async () => {
-    return officalService.getTokenPrices();
+    return officialService.getTokenPrices();
   };
 
   const queryOptions = reactive({

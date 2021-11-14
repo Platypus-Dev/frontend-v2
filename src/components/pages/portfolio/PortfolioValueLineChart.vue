@@ -43,7 +43,7 @@ import { flatMap, groupBy, map } from 'lodash';
 import {
   UserPortfolioData,
   UserTokenData
-} from '@/services/offical/offical-types';
+} from '@/services/official/official-types';
 import { format } from 'date-fns';
 import { orderBy } from 'lodash';
 

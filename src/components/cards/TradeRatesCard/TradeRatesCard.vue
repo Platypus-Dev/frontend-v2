@@ -12,7 +12,7 @@
       </div>
       <div class="w-20 flex justify-center">
         <img
-          src="https://storageapi.fleek.co/officalfi-team-bucket/SPIRIT.png"
+          src="https://storageapi.fleek.co/beethovenxfi-team-bucket/SPIRIT.png"
           width="32"
         />
       </div>

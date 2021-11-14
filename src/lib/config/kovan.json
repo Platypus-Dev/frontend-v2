@@ -22,6 +22,7 @@
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
   },
   "addresses": {
+    "officialToken": "",
     "bFactory": "0x8f7F78080219d4066A8036ccD30D588B416a40DB",
     "bActions": "0x02EFDB542B9390ae7C1620B29674e02F9c0d86CC",
     "dsProxyRegistry": "0x130767E0cf05469CF11Fa3fcf270dfC1f52b9072",
