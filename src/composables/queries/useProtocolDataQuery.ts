@@ -36,7 +36,7 @@ export default function useProtocolDataQuery(
       appNetworkConfig.addresses.usdc
     );
 
-    const circulatingSupply = await masterChefContractsService.beethovenxToken.getCirculatingSupply();
+    const circulatingSupply = await masterChefContractsService.officalToken.getCirculatingSupply();
 
     return {
       ...balancerData,

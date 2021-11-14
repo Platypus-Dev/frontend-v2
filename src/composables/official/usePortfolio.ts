@@ -1,6 +1,6 @@
 import { computed } from 'vue';
-import usePortfolioQuery from '@/composables/beethovenx/usePortfolioQuery';
-import { UserPortfolioData } from '@/services/beethovenx/beethovenx-types';
+import usePortfolioQuery from '@/composables/offical/usePortfolioQuery';
+import { UserPortfolioData } from '@/services/offical/offical-types';
 
 export default function usePortfolio() {
   const portfolioQuery = usePortfolioQuery();

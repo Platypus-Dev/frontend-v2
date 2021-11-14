@@ -67,7 +67,7 @@ import ECharts from 'vue-echarts';
 import useTailwind from '@/composables/useTailwind';
 import BalCard from '@/components/_global/BalCard/BalCard.vue';
 import { chartColors } from '@/constants/colors';
-import { UserTokenData } from '@/services/beethovenx/beethovenx-types';
+import { UserTokenData } from '@/services/offical/offical-types';
 import { sumBy } from 'lodash';
 import useNumbers from '@/composables/useNumbers';
 

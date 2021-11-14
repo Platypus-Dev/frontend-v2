@@ -34,6 +34,6 @@ export default class OfficialToken {
   }
 
   public get address(): string {
-    return this.service.config.addresses.beethovenxToken || '';
+    return this.service.config.addresses.officalToken || '';
   }
 }

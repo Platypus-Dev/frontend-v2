@@ -5,8 +5,8 @@ import QUERY_KEYS from '@/constants/queryKeys';
 import { FETCH_ONCE_OPTIONS } from '@/constants/vue-query';
 import {
   OfficialConfig,
-  beethovenxService
-} from '@/services/beethovenx/beethovenx.service';
+  officalService
+} from '@/services/offical/offical.service';
 
 /**
  * Fetch all token lists, should only happen once.
@@ -17,8 +17,8 @@ export default function useOfficialConfigQuery(
   const queryKey = reactive(QUERY_KEYS.Config.All);
 
   const queryFn = async () => {
-    console.log('Fetching beethovenx config');
-    return beethovenxService.getOfficialConfig();
+    console.log('Fetching offical config');
+    return officalService.getOfficialConfig();
   };
 
   const queryOptions = reactive({

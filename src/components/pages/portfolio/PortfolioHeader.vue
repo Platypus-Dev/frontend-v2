@@ -78,7 +78,7 @@
 <script lang="ts">
 import { computed, defineComponent, PropType } from 'vue';
 import numeral from 'numeral';
-import { UserPortfolioData } from '@/services/beethovenx/beethovenx-types';
+import { UserPortfolioData } from '@/services/offical/offical-types';
 import useNumbers from '@/composables/useNumbers';
 import useProtocolDataQuery from '@/composables/queries/useProtocolDataQuery';
 import { DecoratedPoolWithRequiredFarm } from '@/services/balancer/subgraph/types';
