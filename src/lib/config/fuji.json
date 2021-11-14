@@ -16,6 +16,7 @@
   "blockSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/avalanche-blocks",
   "poolsUrlV1": "",
   "poolsUrlV2": "",
+  "backendUrl": "",
   "nativeAsset": {
     "name": "Avalanche",
     "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
@@ -54,5 +55,22 @@
       "type": "2",
       "name": "weightedPool"
     }
-  }
+  },
+  "etherscan": {
+    "apiKey": "",
+    "apiUrl": "https://testnet.snowtrace.io/api"
+  },
+  "lbp": {
+    "poolId": "",
+    "tokenAddress": "0xEE67880A6aaBa39c5eAf833B68Ea5fd908dC008D",
+    "tokenSymbol": "CIAL",
+    "startingAmount": 5000000,
+    "usdcAddress": "0x70b55Af71B29c5Ca7e67bD1995250364C4bE5554",
+    "startTime": "2021-10-07T06:18:00+0000",
+    "endTime": "2021-10-07T08:18:00+0000",
+    "weightStep":  0.00625,
+    "timeStep": 300
+  },
+  "tokenListSanityUrl": "",
+  "configSanityUrl": ""
 }
