@@ -17,7 +17,7 @@ export default class ConfigService {
   public get env(): Env {
     return {
       APP_ENV: process.env.VUE_APP_ENV || 'development',
-      NETWORK: process.env.VUE_APP_NETWORK || '250',
+      NETWORK: process.env.VUE_APP_NETWORK || '43113',
       APP_DOMAIN: process.env.VUE_APP_DOMAIN || 'app.official.finance',
       IPFS_NODE: process.env.VUE_APP_IPFS_NODE || 'ipfs.io',
       BLOCKNATIVE_DAPP_ID: process.env.VUE_APP_BLOCKNATIVE_DAPP_ID || 'xxx',

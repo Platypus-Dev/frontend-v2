@@ -6,7 +6,8 @@ export default function useOfficialConfig() {
   const officialConfigQuery = useOfficialConfigQuery();
 
   const officialConfigLoading = computed(
-    () => officialConfigQuery.isLoading.value || officialConfigQuery.isIdle.value
+    () =>
+      officialConfigQuery.isLoading.value || officialConfigQuery.isIdle.value
   );
 
   const officialConfig = computed(
