@@ -11,7 +11,7 @@
   "loggingRpc": "https://polygon-mainnet.g.alchemy.com/v2/hsAEQ4l4c6uz3ciAdQ9w3ODWjVcND-Ti",
   "publicRpc": "https://api.avax-test.network/ext/bc/C/rpc",
   "explorer": "https://cchain.explorer.avax-test.network",
-  "subgraph": "https://thegraph.com/hosted-service/subgraph/l0rdicon/subgraph-fuji-v2",
+  "subgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/subgraph-fuji-v2",
   "farmSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/official-token",
   "blockSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/avalanche-blocks",
   "poolsUrlV1": "",
@@ -26,9 +26,9 @@
     "logoURI": "https://assets.coingecko.com/coins/images/4001/large/Fantom.png"
   },
   "addresses": {
-    "stETH": "",
-    "wstETH": "",
-    "lidoRelayer": "",
+    "bFactory": "",
+    "bActions": "",
+    "dsProxyRegistry": "",
     "exchangeProxy": "",
     "merkleRedeem": "",
     "officialToken": "0xEE67880A6aaBa39c5eAf833B68Ea5fd908dC008D",
@@ -39,6 +39,18 @@
     "stablePoolFactory": "0x68ad353C5e8db136bFF82A980a93c4C3635582d0",
     "tokenFactory": "0x6CA5DEfACb733E69d4cEe03f8d008F274BC3d9dd",
     "weth": "0x2aBcDD4948b43921B06846E570e38399a0C33EF3",
+    "beets": "0xEE67880A6aaBa39c5eAf833B68Ea5fd908dC008D",
+    "fbeetsVestingToken": "",
+    "fbeetsToken": "",
+    "stETH": "",
+    "wstETH": "",
+    "lidoRelayer": "",
+    "usdc": "",
+    "earlyLudwigNft": "",
+    "hnd": "",
+    "hndRewarder": "",
+    "defaultPoolOwner": "",
+    "beetsUsdcReferencePricePool": "",
     "balancerHelpers": "0xf139df5de6d21797688c49Ee1D5769a99f83f0ca",
     "masterChef": "0xF3af4de70e1afb4E998BEa88177CdF31BDab5b69"
   },
@@ -71,6 +83,6 @@
     "weightStep":  0.00625,
     "timeStep": 300
   },
-  "tokenListSanityUrl": "",
+  "tokenListSanityUrl": "https://raw.githubusercontent.com/l0rdicon/offical-token-lists/main/tokens.fuji.json",
   "configSanityUrl": ""
 }

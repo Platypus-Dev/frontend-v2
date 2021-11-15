@@ -105,7 +105,7 @@ export const TOKENS = {
     }
   }
 };
-console.log("ogo network", configService.network)
+console.log('ogo network', configService.network);
 
 export const NATIVE_ASSET_ADDRESS = configService.network.nativeAsset.address;
 export const DEFAULT_TOKEN_DECIMALS = 18;

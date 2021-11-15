@@ -24,6 +24,7 @@ export default class TokenListService {
       this.configService.network.tokenListSanityUrl
     );
 
+    console.log("getTokenListMap", data)
     return { [url]: data.result };
   }
 }

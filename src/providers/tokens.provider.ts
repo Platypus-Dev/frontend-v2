@@ -205,7 +205,9 @@ export default {
      */
     function mapTokenListTokens(tokenLists: TokenList[]): TokenInfoMap {
       const tokensMap = {};
+      console.log("token maps!", JSON.stringify(tokenLists))
       const tokens = tokenLists.map(list => list.tokens).flat();
+      console.log("token maps!", tokens)
 
       tokens.forEach(token => {
         const address: string = getAddress(token.address);
