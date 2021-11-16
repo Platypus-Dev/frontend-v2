@@ -192,6 +192,7 @@ export default defineComponent({
       try {
         emit('createPoolTriggered');
         creating.value = true;
+        console.log("creating weighted pool", props.poolName, poolTokens)
         const tx = await poolCreatorService.value.createWeightedPool(
           getProvider(),
           props.poolName,

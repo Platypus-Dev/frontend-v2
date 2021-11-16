@@ -16,7 +16,7 @@
   "blockSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/avalanche-blocks",
   "poolsUrlV1": "",
   "poolsUrlV2": "",
-  "backendUrl": "",
+  "backendUrl": "http://192.168.2.75:8081/graphql",
   "nativeAsset": {
     "name": "Avalanche",
     "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
@@ -45,11 +45,11 @@
     "stETH": "",
     "wstETH": "",
     "lidoRelayer": "",
-    "usdc": "",
+    "usdc": "0x6275b63a4ee560004c34431e573314426906cee9",
     "earlyLudwigNft": "",
     "hnd": "",
     "hndRewarder": "",
-    "defaultPoolOwner": "",
+    "defaultPoolOwner": "0xD0DF68f0149C3e662Df772CF40cB63070591AD36",
     "beetsUsdcReferencePricePool": "",
     "balancerHelpers": "0xf139df5de6d21797688c49Ee1D5769a99f83f0ca",
     "masterChef": "0xF3af4de70e1afb4E998BEa88177CdF31BDab5b69"
