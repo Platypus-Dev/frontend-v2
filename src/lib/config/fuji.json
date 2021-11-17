@@ -16,14 +16,14 @@
   "blockSubgraph": "https://api.thegraph.com/subgraphs/name/l0rdicon/avalanche-blocks",
   "poolsUrlV1": "",
   "poolsUrlV2": "",
-  "backendUrl": "http://192.168.2.75:8081/graphql",
+  "backendUrl": "https://graph.official.finance/graphql",
   "nativeAsset": {
     "name": "Avalanche",
-    "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    "address": "0x0000000000000000000000000000000000000000",
     "symbol": "AVAX",
     "decimals": 18,
     "deeplinkId": "avax",
-    "logoURI": "https://assets.coingecko.com/coins/images/4001/large/Fantom.png"
+    "logoURI": "https://cdn.discordapp.com/emojis/902638084779278356.png"
   },
   "addresses": {
     "bFactory": "",
@@ -38,7 +38,7 @@
     "weightedPoolFactory": "0x4c4407B7Ad7DF956173e479A4f70D57F7df50aC4",
     "stablePoolFactory": "0x68ad353C5e8db136bFF82A980a93c4C3635582d0",
     "tokenFactory": "0x6CA5DEfACb733E69d4cEe03f8d008F274BC3d9dd",
-    "weth": "0x2aBcDD4948b43921B06846E570e38399a0C33EF3",
+    "weth": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
     "beets": "0xEE67880A6aaBa39c5eAf833B68Ea5fd908dC008D",
     "fbeetsVestingToken": "",
     "fbeetsToken": "",

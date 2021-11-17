@@ -24,11 +24,11 @@
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
   },
   {
-    "address": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+    "address": "0x4b20b17bdb9991a8549f5ceb8bd813419e537209",
     "chainId": 43113,
     "name": "Dai Stablecoin",
     "symbol": "DAI.e",
     "decimals": 18,
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    "logoURI": "https://raw.githubusercontent.com/ava-labs/avalanche-bridge-resources/main/tokens/DAI/logo.png"
   }
 ]

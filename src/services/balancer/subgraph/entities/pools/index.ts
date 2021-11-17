@@ -72,7 +72,7 @@ export default class Pools {
       pool.tokens = this.formatPoolTokens(pool);
       pool.totalLiquidity = getPoolLiquidity(pool, prices, currency);
 
-      if (
+      /*if (
         pool.id ===
         '0xae1c69eae0f1342425ea3fdb51e9f11223c7ad5b00010000000000000000000b'
       ) {
@@ -95,7 +95,7 @@ export default class Pools {
         '0x2c580c6f08044d6dfaca8976a66c8fadddbd9901000000000000000000000038'
       ) {
         pool.name = 'Guqin Qi V2';
-      }
+      }*/
 
       const pastPool = pastPools.find(p => p.id === pool.id);
       const volume = this.calcVolume(pool, pastPool);

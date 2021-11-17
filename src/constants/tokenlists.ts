@@ -79,12 +79,12 @@ export const TOKEN_LIST_MAP: TokenListMapByNetwork = {
   '43113': {
     Balancer: {
       Default:
-        'https://beethoven-assets.s3.eu-central-1.amazonaws.com/beethoven-rinkeby.tokenlist.json',
+        'https://raw.githubusercontent.com/l0rdicon/offical-token-lists/main/tokens.fuji.json',
       Vetted:
-        'https://beethoven-assets.s3.eu-central-1.amazonaws.com/beethoven-rinkeby.tokenlist.json'
+        'https://raw.githubusercontent.com/l0rdicon/offical-token-lists/main/tokens.fuji.json'
     },
     External: [
-      'https://beethoven-assets.s3.eu-central-1.amazonaws.com/beethoven-rinkeby.tokenlist.json'
+      'https://raw.githubusercontent.com/l0rdicon/offical-token-lists/main/tokens.fuji.json'
     ]
   }
 };
