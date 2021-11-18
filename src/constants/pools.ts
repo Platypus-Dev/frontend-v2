@@ -22,7 +22,7 @@ export const POOLS = {
     '0x58AA5AAF61B4559f83097bb20c856DEff1Ebf63C': 'stablePool',
     //'0x68ad353C5e8db136bFF82A980a93c4C3635582d0': 'stablePool',
     '0x5c4DC4657f0ea986D7337AcAD3307372779300C6': 'weightedPool', //fuji
-    '0x8aA20Dca511e525981Df77871f2D6F5055Ea381b': 'weightedPool', //fuji 2 token
+    '0x8aA20Dca511e525981Df77871f2D6F5055Ea381b': 'weightedPool' //fuji 2 token
     //'0x09d0737d6409B91FAebe77199C85302293699375': 'stablePool' //fuji metastable
   }
 };
