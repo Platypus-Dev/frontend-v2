@@ -24,7 +24,7 @@ export default class ConfigService {
       ALCHEMY_KEY: process.env.VUE_APP_ALCHEMY_KEY || '',
       ENABLE_STABLE_POOLS: process.env.VUE_APP_ENABLE_STABLE_POOLS === 'true',
       PORTIS_DAPP_ID: process.env.PORTIS_DAPP_ID || '',
-      BACKEND_URL: process.env.BACKEND_URL || 'graph.official.finance'
+      BACKEND_URL: process.env.BACKEND_URL || ''
     };
   }
 
