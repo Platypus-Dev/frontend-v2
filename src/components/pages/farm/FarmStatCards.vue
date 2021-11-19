@@ -20,21 +20,14 @@
           {{ fNum(pool.farm.pendingBeets, 'token_fixed') }} BEETS
         </div>
         <div class="truncate flex items-center pb-8">
-          {{
-            fNum(
-              pool.farm.pendingBeetsValue,
-              'usd'
-            )
-          }}
+          {{ fNum(pool.farm.pendingBeetsValue, 'usd') }}
         </div>
 
         <BalBtn
           label="Harvest"
           block
           color="gradient"
-          :disabled="
-            pool.farm.pendingBeets <= 0
-          "
+          :disabled="pool.farm.pendingBeets <= 0"
           :loading="harvesting"
           @click.prevent="harvestRewards"
         />

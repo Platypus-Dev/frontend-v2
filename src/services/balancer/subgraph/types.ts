@@ -141,7 +141,6 @@ export interface DecoratedFarm extends Farm {
   pendingBeetsValue: number;
   apr: number;
   share: number;
-
 }
 
 export interface DecoratedPoolWithFarm extends DecoratedPool {

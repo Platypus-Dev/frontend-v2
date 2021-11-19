@@ -62,8 +62,7 @@ export function calculateApr(
   const farmBeetsPerYear =
     (farm.allocPoint / farm.masterChef.totalAllocPoint) * beetsPerYear;
 
-  const valuePerYear =
-    beetsPrice * farmBeetsPerYear;
+  const valuePerYear = beetsPrice * farmBeetsPerYear;
 
   return valuePerYear / tvl;
 }
@@ -95,12 +94,7 @@ export function decorateFarm(
   farmUser?: FarmUser
 ): DecoratedFarm {
   const tvl = calculateTvl(farm, pool);
-  const apr = calculateApr(
-    farm,
-    pool,
-    blocksPerYear,
-    beetsPrice
-  );
+  const apr = calculateApr(farm, pool, blocksPerYear, beetsPrice);
   const userShare = new BigNumber(farmUser?.amount || 0)
     .div(farm.slpBalance)
     .toNumber();
@@ -113,7 +107,7 @@ export function decorateFarm(
     stake: tvl * userShare,
     pendingBeets: farmUser?.pendingBeets || 0,
     pendingBeetsValue: (farmUser?.pendingBeets || 0) * beetsPrice,
-    share: userShare,
+    share: userShare
   };
 }
 
