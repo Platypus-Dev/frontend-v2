@@ -50,7 +50,7 @@
     "hnd": "",
     "hndRewarder": "",
     "defaultPoolOwner": "0xD0DF68f0149C3e662Df772CF40cB63070591AD36",
-    "beetsUsdcReferencePricePool": "",
+    "beetsUsdcReferencePricePool": "0x60698ee2248C223fa3FF7Fc0D5814b3bEF12588A",
     "balancerHelpers": "0xc3435200f8699586FaB79f69AA30ed93B16b54cf",
     "masterChef": "0xF3af4de70e1afb4E998BEa88177CdF31BDab5b69"
   },

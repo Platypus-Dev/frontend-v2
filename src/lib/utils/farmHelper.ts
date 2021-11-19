@@ -48,8 +48,7 @@ export function calculateApr(
   farm: Farm,
   pool: DecoratedPool,
   blocksPerYear: number,
-  beetsPrice: number,
-  rewardTokenPrice: number
+  beetsPrice: number
 ) {
   const tvl = calculateTvl(farm, pool);
 
@@ -62,13 +61,9 @@ export function calculateApr(
   const beetsPerYear = beetsPerBlock * blocksPerYear;
   const farmBeetsPerYear =
     (farm.allocPoint / farm.masterChef.totalAllocPoint) * beetsPerYear;
-  const rewardTokenPerYear =
-    Number(parseInt(farm.rewarder?.rewardPerSecond || '0') / 1e18) *
-    86400 *
-    365;
 
   const valuePerYear =
-    beetsPrice * farmBeetsPerYear + rewardTokenPrice * rewardTokenPerYear;
+    beetsPrice * farmBeetsPerYear;
 
   return valuePerYear / tvl;
 }
@@ -77,11 +72,10 @@ export function getPoolApr(
   pool: DecoratedPool,
   farm: DecoratedFarm,
   blocksPerYear: number,
-  beetsPrice: number,
-  rewardTokenPrice: number
+  beetsPrice: number
 ): PoolApr {
   const liquidityMiningApr = farm
-    ? `${calculateApr(farm, pool, blocksPerYear, beetsPrice, rewardTokenPrice)}`
+    ? `${calculateApr(farm, pool, blocksPerYear, beetsPrice)}`
     : '0';
 
   return {
@@ -98,7 +92,6 @@ export function decorateFarm(
   blocksPerYear: number,
   blocksPerDay: number,
   beetsPrice: number,
-  rewardTokenPrice: number,
   farmUser?: FarmUser
 ): DecoratedFarm {
   const tvl = calculateTvl(farm, pool);
@@ -106,8 +99,7 @@ export function decorateFarm(
     farm,
     pool,
     blocksPerYear,
-    beetsPrice,
-    rewardTokenPrice
+    beetsPrice
   );
   const userShare = new BigNumber(farmUser?.amount || 0)
     .div(farm.slpBalance)
@@ -122,8 +114,6 @@ export function decorateFarm(
     pendingBeets: farmUser?.pendingBeets || 0,
     pendingBeetsValue: (farmUser?.pendingBeets || 0) * beetsPrice,
     share: userShare,
-    pendingRewardToken: farmUser?.pendingRewardToken || 0,
-    pendingRewardTokenValue: farmUser?.pendingRewardTokenValue || 0
   };
 }
 
@@ -133,8 +123,7 @@ export function decorateFarms(
   allFarmsForUser: FarmUser[],
   blocksPerYear: number,
   blocksPerDay: number,
-  beetsPrice: number,
-  rewardTokenPrice: number
+  beetsPrice: number
 ) {
   if (farms.length === 0 || pools.length === 0) {
     return [];
@@ -158,7 +147,6 @@ export function decorateFarms(
           blocksPerYear,
           blocksPerDay,
           beetsPrice,
-          rewardTokenPrice,
           farmUser
         )
       );

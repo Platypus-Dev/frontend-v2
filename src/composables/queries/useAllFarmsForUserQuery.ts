@@ -15,7 +15,7 @@ export default function useAllFarmsForUserQuery(
 ) {
   const { account, isWalletReady, appNetworkConfig } = useWeb3();
   const { appLoading } = useApp();
-  const { priceFor, dynamicDataLoading, loading } = useTokens();
+  const { dynamicDataLoading, loading } = useTokens();
   const protocolDataQuery = useProtocolDataQuery();
   const beetsPrice = computed(
     () => protocolDataQuery.data?.value?.beetsPrice || 0
@@ -43,19 +43,10 @@ export default function useAllFarmsForUserQuery(
           account.value
         );
 
-        const pendingRewardToken = await masterChefContractsService.hndRewarder.getPendingReward(
-          userFarm.pool.id,
-          account.value
-        );
-
-        const hndPrice = priceFor(appNetworkConfig.addresses.hnd);
-
         decoratedUserFarms.push({
           ...userFarm,
           pendingBeets,
-          pendingBeetsValue: pendingBeets * beetsPrice.value,
-          pendingRewardToken,
-          pendingRewardTokenValue: pendingRewardToken * hndPrice
+          pendingBeetsValue: pendingBeets * beetsPrice.value
         });
       }
 
